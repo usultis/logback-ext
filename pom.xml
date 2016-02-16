@@ -8,7 +8,7 @@
     <artifactId>eluder-parent</artifactId>
     <groupId>org.eluder</groupId>
     <version>8-SNAPSHOT</version>
-    <relativePath></relativePath>
+    <relativePath>eluder-parent-pom.xml</relativePath>
   </parent>
 
   <groupId>org.eluder.logback</groupId>
@@ -20,6 +20,20 @@
   <description>Extensions for Logback logging library.</description>
   <url>https://github.com/trautonen/logback-ext</url>
   <inceptionYear>2014</inceptionYear>
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Snapshots</name>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
 
   <developers>
     <developer>
